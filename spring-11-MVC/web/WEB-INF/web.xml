@@ -4,17 +4,15 @@
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
 
-    <!--配置DispathServlet：这是springmvc的核心，请求分发器，前端控制器-->
-    <!--1.注册DispatcherServlet-->
     <servlet>
         <servlet-name>springmvc</servlet-name>
         <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
-        <!--关联一个springmvc的配置文件:【servlet-name】-servlet.xml-->
+
         <init-param>
             <param-name>contextConfigLocation</param-name>
-            <param-value>classpath:springmvc-servlet.xml</param-value>
+            <param-value>classpath:springmvc-serlvet.xml</param-value>
         </init-param>
-        <!--启动级别-1-->
+
         <load-on-startup>1</load-on-startup>
     </servlet>
 
